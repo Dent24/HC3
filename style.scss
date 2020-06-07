@@ -41,4 +41,28 @@ nav{
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3,1fr);
+
+    div{
+        height: 300px;
+
+        &:nth-child(1){
+            background: #252525;
+            color: white;
+            display: grid;
+            align-items: center;
+            text-align: center;
+            font-size: 45px;
+        }
+    
+        &:nth-child(2){
+            background-image: url(./img/d-beach-1.jpg);
+            background-size: cover;
+        }
+
+        &:nth-child(3){
+            background-image: url(./img/d-beach-2.jpg);
+            background-size: cover;
+        }
+    }
+
 }
