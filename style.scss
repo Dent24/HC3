@@ -34,15 +34,6 @@ nav{
 
 #menu{
     display: none;
-
-    a{
-        &:nth-child(1){
-            img{
-                width: 28px;
-                height: 28px;
-            }
-        }
-    }
 }
 
 #banner{
@@ -118,6 +109,20 @@ nav{
 
         #menu{
             display: block;
+
+            a{
+                display: none;
+
+                &:nth-child(1){
+                    display: block;
+                }
+            }
+
+            &:hover a:nth-child(n+2){
+                display: block;
+                padding: 20px 0;
+                padding-left: 30px;
+            }
         }
     }
 
@@ -158,6 +163,25 @@ nav{
         div{
             @include mobile-box();
             padding: 20px 10px;
+            display: none;
+        }
+
+        #menu{
+            display: block;
+
+            a{
+                display: none;
+
+                &:nth-child(1){
+                    display: block;
+                }
+            }
+
+            &:hover a:nth-child(n+2){
+                display: block;
+                padding: 20px 0;
+                padding-left: 30px;
+            }
         }
     }
 
