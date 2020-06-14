@@ -31,6 +31,15 @@ nav div a:hover {
   color: orangered;
 }
 
+#menu {
+  display: none;
+}
+
+#menu a:nth-child(1) img {
+  width: 28px;
+  height: 28px;
+}
+
 #banner {
   width: 100%;
   height: 100vh;
@@ -104,6 +113,10 @@ nav div a:hover {
   nav div {
     width: 750px;
     margin: 0 auto;
+    display: none;
+  }
+  nav #menu {
+    display: block;
   }
   #picture {
     width: 750px;

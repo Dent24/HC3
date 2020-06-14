@@ -32,6 +32,19 @@ nav{
     }
 }
 
+#menu{
+    display: none;
+
+    a{
+        &:nth-child(1){
+            img{
+                width: 28px;
+                height: 28px;
+            }
+        }
+    }
+}
+
 #banner{
     width: 100%;
     height: 100vh;
@@ -100,6 +113,11 @@ nav{
     nav{
         div{
             @include pad-box();
+            display: none;
+        }
+
+        #menu{
+            display: block;
         }
     }
 
